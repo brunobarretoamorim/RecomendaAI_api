@@ -1,0 +1,6 @@
+Flask>=1.0,<=1.1.2
+pandas
+pickle-mixin
+pyarrow==0.15.1
+Cython
+sklearn
