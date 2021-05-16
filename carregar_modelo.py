@@ -42,6 +42,12 @@ def carregaBase(materia, respostas = [], *args):
             df = pd.read_parquet('dataset/erroshabilidadesch_grp.parquet')
         except:
             raise ErroCarregarModelo()
+    elif materia == 'LC':
+            try:
+                modelo = open('modelos/modelo_recsys_lc','rb')
+                df = pd.read_parquet('dataset/erroshabilidadeslc_grp.parquet')
+            except:
+                raise ErroCarregarModelo()
     else:
         raise MateriaInvalida()
 
