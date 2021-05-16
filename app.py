@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, jsonify
+
 import json
 from werkzeug.exceptions import HTTPException, BadRequest
 
@@ -7,10 +8,13 @@ from carregar_modelo import main
 #app = Flask("Modelo")
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
   return render_template('index.html')
+  
+@app.route("/doc")
+def doc():
+  return render_template('doc.html')
 
 @app.route("/modelo", methods=["POST"])
 def resultadoModelo():
