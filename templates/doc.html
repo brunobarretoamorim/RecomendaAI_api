@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>RecomendaAI Doc</title>
+    </head>
+    <body>
+        <h1>
+            Documentação
+        </h1>
+
+        <div class="box">
+            <h4>Utilização</h4>
+            <h4>Necessário realizar uma requisição POST na rota abaixo</h4>
+            <div class="urlcep">
+            URL:
+            <a href="https://recomendaai-api-test.azurewebsites.net/modelo" target="_blank">
+                https://recomendaai-api-test.azurewebsites.net/modelo
+            </a>
+            <br>
+           
+            </div>
+            <h4>Exemplo de Input</h4>
+            <pre><code>
+                {
+                    "materia": "MT", 
+                    "data": [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0]
+                }                            
+                </code></pre>
+            </div>
+
+            
+        <div class="box">
+            <h4>Output</h4>
+            <div class="urlcep">
+            </div>
+            <pre><code>
+                {
+                    "Analisar informações envolvendo a variação de grandezas como recurso para a construção de argumentação": 1,
+                    "Analisar informações expressas em gráficos ou tabelas como recurso para a construção de argumentos": 1,
+                    "Avaliar a razoabilidade de um resultado numérico na construção de argumentos sobre afirmações quantitativas": 1,
+                    "Avaliar proposta de intervenção na realidade utilizando conhecimentos geométricos relacionados a grandezas e medidas": 1,
+                    "Avaliar propostas de intervenção na realidade envolvendo variação de grandezas": 1,
+                    "Avaliar propostas de intervenção na realidade utilizando conhecimentos de estatística e probabilidade": 1,
+                    "Identificar características de figuras planas ou espaciais": 1,
+                    "Identificar representações algébricas que expressem a relação entre grandezas": 1,
+                    "Resolver situação-problema cuja modelagem envolva conhecimentos algébricos": 1,
+                    "Resolver situação-problema envolvendo conhecimentos numéricos": 1,
+                    "Resolver situação-problema que envolva conhecimentos de estatística e probabilidade": 1,
+                    "Resolver situação-problema que envolva conhecimentos geométricos de espaço e forma": 1,
+                    "Utilizar conhecimentos de estatística e probabilidade como recurso para a construção de argumentação": 1
+                }
+                        </code></pre>
+            </div>
+
+
+    </body>
+</html>
